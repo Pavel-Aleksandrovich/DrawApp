@@ -3,27 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		846C6DBA29F65749001056A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C6DB929F65749001056A8 /* AppDelegate.swift */; };
 		846C6DBC29F65749001056A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C6DBB29F65749001056A8 /* SceneDelegate.swift */; };
-		846C6DBE29F65749001056A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C6DBD29F65749001056A8 /* ViewController.swift */; };
+		846C6DBE29F65749001056A8 /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C6DBD29F65749001056A8 /* DrawViewController.swift */; };
 		846C6DC129F65749001056A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846C6DBF29F65749001056A8 /* Main.storyboard */; };
 		846C6DC329F65749001056A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846C6DC229F65749001056A8 /* Assets.xcassets */; };
 		846C6DC629F65749001056A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846C6DC429F65749001056A8 /* LaunchScreen.storyboard */; };
+		846C6DCF29F657C2001056A8 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C6DCE29F657C2001056A8 /* CanvasView.swift */; };
+		846C6DD129F65BA2001056A8 /* CanvasPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C6DD029F65BA2001056A8 /* CanvasPresenter.swift */; };
+		846C6DD329F65E87001056A8 /* PenDrawTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C6DD229F65E87001056A8 /* PenDrawTool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		846C6DB629F65749001056A8 /* DrawApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		846C6DB929F65749001056A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		846C6DBB29F65749001056A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		846C6DBD29F65749001056A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		846C6DBD29F65749001056A8 /* DrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
 		846C6DC029F65749001056A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		846C6DC229F65749001056A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		846C6DC529F65749001056A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		846C6DC729F65749001056A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		846C6DCE29F657C2001056A8 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		846C6DD029F65BA2001056A8 /* CanvasPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasPresenter.swift; sourceTree = "<group>"; };
+		846C6DD229F65E87001056A8 /* PenDrawTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenDrawTool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,26 @@
 		846C6DB829F65749001056A8 /* DrawApp */ = {
 			isa = PBXGroup;
 			children = (
-				846C6DB929F65749001056A8 /* AppDelegate.swift */,
-				846C6DBB29F65749001056A8 /* SceneDelegate.swift */,
-				846C6DBD29F65749001056A8 /* ViewController.swift */,
+				846C6DCD29F657B5001056A8 /* Application */,
+				846C6DBD29F65749001056A8 /* DrawViewController.swift */,
+				846C6DCE29F657C2001056A8 /* CanvasView.swift */,
+				846C6DD029F65BA2001056A8 /* CanvasPresenter.swift */,
+				846C6DD229F65E87001056A8 /* PenDrawTool.swift */,
 				846C6DBF29F65749001056A8 /* Main.storyboard */,
 				846C6DC229F65749001056A8 /* Assets.xcassets */,
 				846C6DC429F65749001056A8 /* LaunchScreen.storyboard */,
 				846C6DC729F65749001056A8 /* Info.plist */,
 			);
 			path = DrawApp;
+			sourceTree = "<group>";
+		};
+		846C6DCD29F657B5001056A8 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				846C6DB929F65749001056A8 /* AppDelegate.swift */,
+				846C6DBB29F65749001056A8 /* SceneDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,7 +120,7 @@
 				};
 			};
 			buildConfigurationList = 846C6DB129F65748001056A8 /* Build configuration list for PBXProject "DrawApp" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -138,7 +155,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				846C6DBE29F65749001056A8 /* ViewController.swift in Sources */,
+				846C6DD129F65BA2001056A8 /* CanvasPresenter.swift in Sources */,
+				846C6DD329F65E87001056A8 /* PenDrawTool.swift in Sources */,
+				846C6DBE29F65749001056A8 /* DrawViewController.swift in Sources */,
+				846C6DCF29F657C2001056A8 /* CanvasView.swift in Sources */,
 				846C6DBA29F65749001056A8 /* AppDelegate.swift in Sources */,
 				846C6DBC29F65749001056A8 /* SceneDelegate.swift in Sources */,
 			);
@@ -216,7 +236,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +290,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -295,6 +315,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,6 +344,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
